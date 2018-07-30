@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=2]
+[gd_scene load_steps=118 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Models/naturePack_046.obj" type="ArrayMesh" id=2]
@@ -51,6 +51,10 @@
 [ext_resource path="res://Models/naturePack_009.obj" type="ArrayMesh" id=49]
 [ext_resource path="res://Models/naturePack_019.obj" type="ArrayMesh" id=50]
 [ext_resource path="res://Panel.gd" type="Script" id=51]
+[ext_resource path="res://Panel2.gd" type="Script" id=52]
+[ext_resource path="res://Panel3.gd" type="Script" id=53]
+[ext_resource path="res://Panel4.gd" type="Script" id=54]
+[ext_resource path="res://Panel5.gd" type="Script" id=55]
 
 [sub_resource type="ConvexPolygonShape" id=1]
 
@@ -385,6 +389,10 @@ func _ready():
 extents = Vector3( 1, 1, 1 )
 
 [sub_resource type="BoxShape" id=61]
+
+extents = Vector3( 1, 1, 1 )
+
+[sub_resource type="BoxShape" id=62]
 
 extents = Vector3( 1, 1, 1 )
 
@@ -3022,21 +3030,333 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 123.0
-margin_top = 37.0
-margin_right = 226.0
-margin_bottom = 137.0
+margin_left = 193.0
+margin_top = 22.0
+margin_right = 233.0
+margin_bottom = 36.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-text = "Helloworld"
+text = "Clue 1"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="Label2" type="Label" parent="Panel" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 126.0
+margin_top = 81.0
+margin_right = 311.0
+margin_bottom = 112.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "See if you can find a flower
+by the rocks along the river."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Panel2" type="Panel" parent="." index="27"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 330.0
+margin_top = 186.0
+margin_right = 699.0
+margin_bottom = 376.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 52 )
+
+[node name="Label" type="Label" parent="Panel2" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 149.0
+margin_top = 12.0
+margin_right = 193.0
+margin_bottom = 37.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Clue 2 "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label2" type="Label" parent="Panel2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 91.0
+margin_top = 72.0
+margin_right = 281.0
+margin_bottom = 120.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Some campers seem to have 
+abandoned their campsite...
+why don't you go explore it?"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Panel3" type="Panel" parent="." index="28"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 337.0
+margin_top = 168.0
+margin_right = 694.0
+margin_bottom = 400.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 53 )
+
+[node name="Label" type="Label" parent="Panel3" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 140.0
+margin_top = 39.0
+margin_right = 180.0
+margin_bottom = 53.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Clue 3"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label2" type="Label" parent="Panel3" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 46.0
+margin_top = 125.0
+margin_right = 320.0
+margin_bottom = 156.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Good job! I think something's waiting
+for you inbetween the palm trees..."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Panel4" type="Panel" parent="." index="29"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 358.0
+margin_top = 191.0
+margin_right = 692.0
+margin_bottom = 353.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 54 )
+
+[node name="Label" type="Label" parent="Panel4" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 117.0
+margin_top = 11.0
+margin_right = 157.0
+margin_bottom = 25.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Clue4"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label2" type="Label" parent="Panel4" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 52.0
+margin_top = 84.0
+margin_right = 265.0
+margin_bottom = 115.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Almost there! Go find the 
+loop in the river to get home."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Area" type="Area" parent="." index="30"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5644, 0, 12.9014 )
+input_ray_pickable = false
+input_capture_on_drag = false
+space_override = 0
+gravity_point = false
+gravity_distance_scale = 0.0
+gravity_vec = Vector3( 0, -1, 0 )
+gravity = 9.8
+linear_damp = 0.1
+angular_damp = 1.0
+priority = 0.0
+monitoring = true
+monitorable = true
+collision_layer = 1
+collision_mask = 1
+audio_bus_override = false
+audio_bus_name = "Master"
+reverb_bus_enable = false
+reverb_bus_name = "Master"
+reverb_bus_amount = 0.0
+reverb_bus_uniformity = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="Area" index="0"]
+
+shape = SubResource( 62 )
+disabled = false
+
+[node name="Panel5" type="Panel" parent="." index="31"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 343.0
+margin_top = 182.0
+margin_right = 686.0
+margin_bottom = 372.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 55 )
+
+[node name="Label" type="Label" parent="Panel5" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_top = 54.0
+margin_right = 280.0
+margin_bottom = 119.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "It looks like somehow you got stuck
+in this world. To get home, start by 
+checking out the spinning blue box
+right ahead of you to get a clue."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button" type="Button" parent="Panel5" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 143.0
+margin_right = 183.0
+margin_bottom = 163.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Close"
+flat = false
+align = 1
+
 [connection signal="body_entered" from="Box" to="." method="_on_Box_body_entered"]
+
+[connection signal="body_entered" from="Box2" to="." method="_on_Box2_body_entered"]
+
+[connection signal="body_entered" from="FlowerKey" to="." method="_on_FlowerKey_body_entered"]
+
+[connection signal="body_entered" from="Campfire" to="." method="_on_Campfire_body_entered"]
+
+[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
+
+[connection signal="pressed" from="Panel5/Button" to="Panel5" method="_on_Button_pressed"]
 
 
